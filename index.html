@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Thunder List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+          <a href=""><img src="images/logo.png" alt="" /></a>
+          <span>Thunder List</span>
+        </div>
+        <div class="navbar">
+          <a class="navbar__link link" href="#">Main</a>
+          <a class="navbar__link link" href="#about">About</a>
+          <a class="navbar__link link" href="#contact">Contacts</a>
+        </div>
+      </div>
+
+      <div class="todo container">
+        <h1 class="heading">TODO List</h1>
+        <hr />
+        <form onsubmit="saveTask(event)" onreset="clearData()">
+          <input
+            autofocus
+            type="text"
+            id="taskInput"
+            placeholder="Enter task to do"
+            aria-multiline="true"
+            title="TODO List"
+          />
+          <br />
+          <button id="taskButton" type="submit" class="button">
+            Save Task
+          </button>
+          <button id="taskReset" type="reset" class="button">Clear</button>
+          <button id="deleteChecked" class="button" onclick="deleteTask()">
+            Delete Checked
+          </button>
+        </form>
+        <div class="taskListContainer">
+          <ul id="taskList"></ul>
+        </div>
+      </div>
+
+      <div class="about container" id="about">
+        <h1 class="heading">About Us</h1>
+        <hr />
+        <span class="about__text text"
+          >Welcome to Thunder List. <br />
+          <br />
+          It is a TODO List for Every One. Thunder List is easy to master and
+          simple in use.
+        </span>
+        <br />
+        <span class="about__text text">
+          Thunder List developed by Thunder inc. and released in May 2023.
+        </span>
+      </div>
+
+      <div class="contact container" id="contact">
+        <h1 class="heading">Contacts</h1>
+        <hr />
+        <p class="contact-text text">
+          Email -
+          <a href="" class="contact__link link">davlyat.n@gmail.com</a>
+        </p>
+        <p class="contact-text text">
+          Number -
+          <a href="" class="contact__link link">+996 (509) 07-99-99</a>
+        </p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

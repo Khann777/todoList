@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.logo span {
+  text-decoration: none;
+  color: #278ac4;
+  font-weight: 600;
+  font-size: 42px;
+  font-style: italic;
+  margin: -30px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar {
+  margin-top: 30px;
+}
+
+.link {
+  margin: 15px;
+  text-decoration: none;
+  color: #278ac4;
+  font-weight: 600;
+  border: 2px solid #278ac4;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* --------------HEADER------------------*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.heading {
+  font-size: 52px;
+  font-style: italic;
+  color: #278ac4;
+}
+hr {
+  width: 750px;
+  height: 2px;
+  background: #278ac4;
+  border: 1px solid #278ac4;
+  border-radius: 50%;
+  margin: 25px auto;
+}
+
+#taskInput {
+  width: 650px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid #278ac4;
+}
+
+input,
+input::placeholder {
+  color: #278ac4;
+  font: 1.25rem/3 sans-serif;
+  font-weight: 600;
+}
+
+.button {
+  font-size: 18px;
+  margin: 20px;
+  background-color: #fff;
+  height: 60px;
+  width: 180px;
+  border-radius: 20px;
+  border: 2px solid #278ac4;
+  color: #278ac4;
+  font-weight: 600;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.taskListContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #278ac4;
+  border-radius: 20px 0;
+  width: 550px;
+  height: 400px;
+  overflow: auto;
+}
+
+#taskList {
+  padding: 0;
+}
+
+/* -------------TODO-------------------- */
+
+.text {
+  text-decoration: none;
+  color: #278ac4;
+  font-weight: 400;
+  font-size: 42px;
+  text-align: center;
+  width: 700px;
+}
